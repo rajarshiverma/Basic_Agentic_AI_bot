@@ -1,2 +1,2 @@
 # Agentic AI chatBot 
-## Gives emotional and logical advice baseed on user input message
+## Gives emotional and logical advice based on user input message
