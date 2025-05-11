@@ -9,4 +9,5 @@ dependencies = [
     "langchain[anthropic,google-genai,google-vertexai]>=0.3.25",
     "langgraph>=0.4.3",
     "python-dotenv>=1.1.0",
+    "streamlit>=1.45.0",
 ]
