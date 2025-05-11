@@ -24,14 +24,14 @@ A sophisticated AI chatbot application that provides both emotional support and 
 - **Backend**: 
   - LangGraph for workflow management
   - Google's Gemini 2.0 Flash model
-  - Python 3.x
+  - Python 3.13+
 - **Dependencies**:
-  - streamlit
-  - streamlit-extras
-  - langgraph
-  - langchain
-  - python-dotenv
-  - google-generativeai
+  - streamlit>=1.45.0
+  - streamlit-extras>=0.7.1
+  - langgraph>=0.4.3
+  - langchain[anthropic,google-genai,google-vertexai]>=0.3.25
+  - python-dotenv>=1.1.0
+  - ipykernel>=6.29.5
 
 ## 🚀 Getting Started
 
@@ -41,18 +41,23 @@ A sophisticated AI chatbot application that provides both emotional support and 
    cd <repository-name>
    ```
 
-2. **Install dependencies**
+2. **Install uv (if not already installed)**
    ```bash
-   pip install -r requirements.txt
+   pip install uv
    ```
 
-3. **Set up environment variables**
+3. **Install dependencies using uv**
+   ```bash
+   uv pip install -e .
+   ```
+
+4. **Set up environment variables**
    Create a `.env` file in the root directory and add your Google API key:
    ```
    GOOGLE_API_KEY=your_api_key_here
    ```
 
-4. **Run the application**
+5. **Run the application**
    ```bash
    streamlit run frontend.py
    ```
@@ -62,6 +67,7 @@ A sophisticated AI chatbot application that provides both emotional support and 
 - `frontend.py`: Streamlit UI implementation with custom styling
 - `backend.py`: Core logic for message processing and response generation
 - `simple_chatbot.py`: Basic implementation example
+- `pyproject.toml`: Project configuration and dependencies
 
 ## 🔄 How It Works
 
